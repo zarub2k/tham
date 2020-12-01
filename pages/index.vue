@@ -22,6 +22,7 @@
         >
           GitHub
         </a>
+        New link
       </div>
     </div>
   </div>
