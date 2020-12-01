@@ -22,7 +22,8 @@
         >
           GitHub
         </a>
-        New link
+        <NuxtLink to="/service">Services</NuxtLink>
+        <NuxtLink to="/contact">Contact me</NuxtLink>
       </div>
     </div>
   </div>
