@@ -8,7 +8,7 @@
           <div>
             <h2>{{ article.title }}</h2>
             <!-- <p>by {{ article.author.name }}</p> -->
-            <p>{{ article.description }}</p>
+            <p class="text-gray-600">{{ article.description }}</p>
           </div>
         </NuxtLink>
       </li>
