@@ -12,9 +12,3 @@
     }
   }
 </script>
-
-<style scoped>
-.nuxt-content code {
-  background-color: red;  
-}
-</style>
