@@ -1,7 +1,25 @@
 <template>
   <main>
-    <NuxtLink to="/service">Services</NuxtLink>
-    <NuxtLink to="/contact">Contact me</NuxtLink>
+    <div class="grid grid-cols-4 gap-4 p-3 border">
+      <div>
+        Logo
+      </div>
+      <div class="col-span-2">
+        <div class="flex">
+          <div class="flex-1">
+            <NuxtLink to="/service">Services</NuxtLink>
+          </div>
+          <div class="flex-1">
+            <NuxtLink to="/blog">Blog</NuxtLink>
+          </div>
+          <div class="flex-1">
+            <NuxtLink to="/contact">Contact me</NuxtLink>
+          </div>
+        </div>
+      </div>
+      <div>Final</div>
+    </div>
+    
     <Nuxt class="" />
   </main>
 </template>
