@@ -2,7 +2,7 @@
   <main>
     <div class="grid grid-cols-4 gap-4 p-3 border">
       <div>
-        Logo
+        <NuxtLink to="/">Logo</NuxtLink>
       </div>
       <div class="col-span-2">
         <div class="flex">
