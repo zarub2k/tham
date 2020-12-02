@@ -2,7 +2,9 @@
   <main>
     <div class="grid grid-cols-4 gap-4 p-3 border">
       <div>
-        <NuxtLink to="/" class="font-sans text-xl antialiased text-indigo-700">Logo</NuxtLink>
+        <NuxtLink to="/" class="font-sans text-xl antialiased text-indigo-700">
+          tham.dev
+        </NuxtLink>
       </div>
       <div class="col-span-2">
         <div class="flex">
