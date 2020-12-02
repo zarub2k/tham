@@ -5,9 +5,11 @@
         <figure class="shadow-md">
           <img src="~/assets/images/flutter.png"
               alt="Elephant at sunset">
-          <figcaption>
-            <h1 class="text-2xl text-indigo-700">{{ recent.title }}</h1>
-            <div>{{ recent.description }} </div>
+          <figcaption class="p-2">
+            <NuxtLink :to="{ name: 'blog-slug', params: { slug: recent.slug } }">
+              <h1 class="text-2xl text-indigo-700">{{ recent.title }}</h1>
+            </NuxtLink>
+            <div class="text-s text-gray-600">{{ recent.description }} </div>
           </figcaption>
         </figure>
       </div>
@@ -24,9 +26,11 @@
         <figure class="shadow-xl">
           <img src="~/assets/images/flutter.png"
               alt="Elephant at sunset">
-          <figcaption>
-            <h1 class="text-xl text-indigo-700">{{ article.title }}</h1>
-            <div>{{ article.description }} </div>
+          <figcaption class="p-2 text-s">
+            <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
+              <h1 class="text-xl text-indigo-700">{{ article.title }}</h1>
+            </NuxtLink>
+            <div class="text-gray-600">{{ article.description }} </div>
           </figcaption>
         </figure>
       </div>
