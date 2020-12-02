@@ -1,12 +1,12 @@
 <template>
   <section class="p-3 px-10">
     <div class="grid grid grid-cols-3 gap-4">
-      <div class="col-span-2">
-        <figure class="my-5">
+      <div class="col-span-2 p-5">
+        <figure class="border">
           <img src="~/assets/images/flutter.png"
               alt="Elephant at sunset">
           <figcaption>
-            <div>{{ recent.title }}</div>
+            <h1 class="text-2xl text-indigo-700">{{ recent.title }}</h1>
             <div>{{ recent.description }} </div>
           </figcaption>
         </figure>
@@ -52,7 +52,7 @@
     async asyncData({ $content, params }) {
       const articles = await $content('articles', params.slug)
         .only(['title', 'description', 'img', 'slug', 'author'])
-        .sortBy('createdAt', 'asc')
+        .sortBy('createdAt', 'desc')
         .fetch()
 
         const recent = articles[0]
