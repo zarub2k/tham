@@ -12,7 +12,10 @@
         </figure>
       </div>
       <div class="my-5">
-        Top Picks
+        <strong>Top Picks</strong>
+        <div class="p-5 border" v-for="topPick of topPicks" :key="topPick.slug">
+          {{topPick.title}}
+        </div>
       </div>
     </div>
 
@@ -57,8 +60,22 @@
 
         const recent = articles[0]
 
+        const topPicks = await $content('articles', params.slug)
+        .only(['title', 'description', 'img', 'slug', 'author'])
+        .sortBy('createdAt', 'desc')
+        .fetch()
+        topPicks.push({
+          title: 'Added 1'
+        })
+        topPicks.push({
+          title: 'Added 2'
+        })
+        topPicks.push({
+          title: 'Added 3'
+        })
+
       return {
-        articles, recent
+        articles, recent, topPicks
       }
     }
   }
