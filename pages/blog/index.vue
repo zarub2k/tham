@@ -9,7 +9,7 @@
             <NuxtLink :to="{ name: 'blog-slug', params: { slug: recent.slug } }">
               <h1 class="text-2xl text-indigo-700">{{ recent.title }}</h1>
             </NuxtLink>
-            <div class="text-s text-gray-600">{{ recent.description }} </div>
+            <div class="text-s text-gray-600 leading-relaxed">{{ recent.description }} </div>
           </figcaption>
         </figure>
       </div>
@@ -30,7 +30,7 @@
             <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
               <h1 class="text-xl text-indigo-700">{{ article.title }}</h1>
             </NuxtLink>
-            <div class="text-gray-600">{{ article.description }} </div>
+            <div class="text-gray-600 leading-relaxed">{{ article.description }} </div>
           </figcaption>
         </figure>
       </div>
