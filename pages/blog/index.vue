@@ -2,7 +2,7 @@
   <section class="p-3 px-10">
     <div class="grid grid grid-cols-3 gap-4">
       <div class="col-span-2 p-5">
-        <figure class="">
+        <figure class="shadow-md">
           <img src="~/assets/images/flutter.png"
               alt="Elephant at sunset">
           <figcaption>
@@ -11,7 +11,7 @@
           </figcaption>
         </figure>
       </div>
-      <div class="my-5">
+      <div class="my-5 shadow-md">
         <strong>Top Picks</strong>
         <div class="p-8 border" v-for="topPick of topPicks" :key="topPick.slug">
           {{topPick.title}}
@@ -19,9 +19,9 @@
       </div>
     </div>
 
-    <div class="grid grid grid-cols-3 gap-10 border">
+    <div class="grid grid grid-cols-3 gap-10">
       <div class="border" v-for="article of articles" :key="article.slug">
-        <figure class="border">
+        <figure class="shadow-xl">
           <img src="~/assets/images/flutter.png"
               alt="Elephant at sunset">
           <figcaption>
