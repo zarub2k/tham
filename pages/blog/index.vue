@@ -2,7 +2,7 @@
   <section class="p-3 px-10">
     <div class="grid grid grid-cols-3 gap-4">
       <div class="col-span-2 p-5">
-        <figure class="border">
+        <figure class="">
           <img src="~/assets/images/flutter.png"
               alt="Elephant at sunset">
           <figcaption>
@@ -13,26 +13,26 @@
       </div>
       <div class="my-5">
         <strong>Top Picks</strong>
-        <div class="p-5 border" v-for="topPick of topPicks" :key="topPick.slug">
+        <div class="p-8 border" v-for="topPick of topPicks" :key="topPick.slug">
           {{topPick.title}}
         </div>
       </div>
     </div>
 
     <div class="grid grid grid-cols-3 gap-10 border">
-      <div class="border">
-        One
+      <div class="border" v-for="article of articles" :key="article.slug">
+        <figure class="border">
+          <img src="~/assets/images/flutter.png"
+              alt="Elephant at sunset">
+          <figcaption>
+            <h1 class="text-xl text-indigo-700">{{ article.title }}</h1>
+            <div>{{ article.description }} </div>
+          </figcaption>
+        </figure>
       </div>
-      <div class="border">
-        Two
-      </div>
-      <div class="border">
-        Three
-      </div>
-      <div class="border">Four</div>
     </div>
 
-    <div>
+    <!-- <div>
       <h1>Blog Posts</h1>
       <ul>
         <li v-for="article of articles" :key="article.slug">
@@ -40,13 +40,13 @@
             <img :src="article.img" />
             <div>
               <h2>{{ article.title }}</h2>
-              <!-- <p>by {{ article.author.name }}</p> -->
+              <p>by {{ article.author.name }}</p>
               <p class="text-gray-600">{{ article.description }}</p>
             </div>
           </NuxtLink>
         </li>
       </ul>
-    </div>
+    </div> -->
   </section>
 </template>
 
@@ -66,12 +66,6 @@
         .fetch()
         topPicks.push({
           title: 'Added 1'
-        })
-        topPicks.push({
-          title: 'Added 2'
-        })
-        topPicks.push({
-          title: 'Added 3'
         })
 
       return {
