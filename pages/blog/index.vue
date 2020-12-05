@@ -36,21 +36,12 @@
       </div>
     </div>
 
-    <!-- <div>
-      <h1>Blog Posts</h1>
-      <ul>
-        <li v-for="article of articles" :key="article.slug">
-          <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
-            <img :src="article.img" />
-            <div>
-              <h2>{{ article.title }}</h2>
-              <p>by {{ article.author.name }}</p>
-              <p class="text-gray-600">{{ article.description }}</p>
-            </div>
-          </NuxtLink>
-        </li>
-      </ul>
-    </div> -->
+    <div class="flex justify-center p-2">
+      <div class="text-center w-full p-5 border inline">
+        <h2 class="mb-5">Technology and growth hacks for your inbox</h2>
+        <input type="text" class="w-1/2 border">
+      </div>
+    </div>
   </section>
 </template>
 
