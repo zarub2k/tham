@@ -3,7 +3,7 @@
     <div class="grid grid grid-cols-3 gap-4 p-2">
       <div class="col-span-2 shadow-md">
         <figure class="">
-          <img :src="require('~/assets/flutter.png')"
+          <img :src="require(`~/assets/images/${recent.thumbnail}`)"
               alt="Elephant at sunset">
           <figcaption class="p-2">
             <NuxtLink :to="{ name: 'blog-slug', params: { slug: recent.slug } }">
@@ -24,7 +24,7 @@
     <div class="grid grid grid-cols-3 gap-4 p-2">
       <div class="border" v-for="article of articles" :key="article.slug">
         <figure class="shadow-xl">
-          <img src="~/assets/flutter.png"
+          <img :src="require(`~/assets/images/${article.thumbnail}`)"
               alt="Elephant at sunset">
           <figcaption class="p-2 text-s">
             <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">

@@ -34,11 +34,11 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    '@aceforth/nuxt-optimized-images',
+    // '@aceforth/nuxt-optimized-images',
   ],
-  optimizedImages: {
-    optimizeImages: true
-  },
+  // optimizedImages: {
+  //   optimizeImages: true
+  // },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
