@@ -8,7 +8,7 @@
       </div>
       <div>
         <div class="border">
-          Author
+          <author :author="article.author" />
         </div>
         <div class="border">
           Social

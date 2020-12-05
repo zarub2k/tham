@@ -13,17 +13,17 @@
           </figcaption>
         </figure>
       </div>
-      <div class="shadow-md">
+      <div class="shadow-md border p-2">
         <strong>Top Picks</strong>
-        <div class="p-8 border" v-for="topPick of topPicks" :key="topPick.slug">
+        <div class="p-8 border mt-2" v-for="topPick of topPicks" :key="topPick.slug">
           {{topPick.title}}
         </div>
       </div>
     </div>
 
     <div class="grid grid grid-cols-3 gap-4 p-2">
-      <div class="border" v-for="article of articles" :key="article.slug">
-        <figure class="shadow-xl">
+      <div class="border shadow-md" v-for="article of articles" :key="article.slug">
+        <figure class="">
           <img :src="require(`~/assets/images/${article.thumbnail}`)"
               alt="Elephant at sunset">
           <figcaption class="p-2 text-s">
