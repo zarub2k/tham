@@ -47,10 +47,16 @@
 
 <script>
   export default {
+    // data () {
+    //   return {
+    //     page: 0
+    //   }
+    // },
     async asyncData({ $content, params }) {
       const articles = await $content('articles', params.slug)
         .only(['title', 'description', 'thumbnail', 'slug', 'author'])
         .sortBy('createdAt', 'desc')
+        .limit(6)
         .fetch()
 
         const recent = articles[0]
