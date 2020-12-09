@@ -36,10 +36,10 @@
       </div>
     </div>
 
-    <div class="flex justify-center p-2">
-      <div class="text-center w-full p-5 border inline">
-        <h2 class="mb-5">Technology and growth hacks for your inbox</h2>
-        <input type="text" class="w-1/2 border">
+    <div class="flex justify-center p-2 mt-5">
+      <div class="text-center w-full p-10 border inline bg-gradient-to-r from-teal-400 to-blue-500">
+        <h2 class="mb-5 text-3xl text-white">Technology and growth hacks for your inbox</h2>
+        <input type="text" class="w-1/2 h-10 p-2 border border-gray-500 focus:border-blue-200 text-gray-600">
       </div>
     </div>
   </section>
