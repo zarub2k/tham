@@ -21,6 +21,17 @@
       </div>
     </div>
 
+    THAM
+
+    <div v-if="blogs.length > 0" class="mb-10">
+      <div v-for="(blog, index) of blogs" :key="index">
+      <p>{{blog.title}}</p>
+    </div>
+    </div>
+    <div v-else class="mb-10">
+      No data
+    </div>
+
     <div class="grid grid grid-cols-3 gap-4 p-2">
       <div class="border shadow-md" v-for="article of articles" :key="article.slug">
         <figure class="">
@@ -35,6 +46,9 @@
         </figure>
       </div>
     </div>
+
+    
+    
 
     <div>
       <button @click="onMore" class="bg-teal-900 p-2 text-white">Load more...</button>
@@ -57,8 +71,12 @@
     data () {
       return {
         email: '',
-        page: 0
+        page: 0,
+        blogs: []
       }
+    },
+    created: function() {
+      this.onData()
     },
     methods: {
       onSubscribe: function() {
@@ -68,6 +86,21 @@
       onMore: function() {
         console.log('Enters onMore() > ' + this.page)
         this.page++;
+        this.onData(this.page);
+        console.log(this.blogs.length)
+      },
+      onData: async function(page) {
+        const skip = page * 1
+        const articles = await this.$content('articles')
+        .only(['title', 'description', 'thumbnail', 'slug', 'author'])
+        .sortBy('createdAt', 'desc')
+        .limit(1)
+        .skip(skip)
+        .fetch()
+
+        for (let i in articles) {
+          this.blogs.push(articles[i])
+        }
       }
     },
     // data () {
