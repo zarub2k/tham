@@ -36,6 +36,10 @@
       </div>
     </div>
 
+    <div>
+      <button @click="onMore" class="bg-teal-900 p-2 text-white">Load more...</button>
+    </div>
+
     <div class="flex justify-center p-2 mt-5">
       <div class="text-center w-full p-10 border inline bg-gradient-to-r from-teal-400 to-blue-500">
         <h2 class="mb-5 text-3xl text-white">Technology and growth hacks for your inbox</h2>
@@ -43,7 +47,6 @@
           <input type="text" v-model="email" class="w-1/2 h-10 p-2 border-gray-300 focus:border-blue-200 text-gray-600">
           <button @click="onSubscribe" class="bg-teal-900 p-2 text-white">Subscribe</button>
         </p>
-        
       </div>
     </div>
   </section>
@@ -53,13 +56,18 @@
   export default {
     data () {
       return {
-        email: ''
+        email: '',
+        page: 0
       }
     },
     methods: {
       onSubscribe: function() {
         console.log('Email subscribed successfully!')
         this.email = ''
+      },
+      onMore: function() {
+        console.log('Enters onMore() > ' + this.page)
+        this.page++;
       }
     },
     // data () {
