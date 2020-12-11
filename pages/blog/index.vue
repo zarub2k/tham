@@ -129,7 +129,9 @@
       onTopRated: async function() {
         const topRated = await this.$content('articles')
         .only(['title', 'slug'])
-        .where({rated: { $eq: true}})
+        .where({
+          rated: true
+        })
         .sortBy('createdAt', 'desc')
         .limit(4)
         .fetch()

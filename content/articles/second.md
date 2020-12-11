@@ -5,7 +5,6 @@ thumbnail: flutter.png
 author:
   name: Tham
   bio: Speaker | Growth Coach | Learner
-rated: true
 ---
 
 # All about new blog
