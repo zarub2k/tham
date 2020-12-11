@@ -51,7 +51,7 @@
       </div>
     </div>
 
-    <div class="text-center mt-2">
+    <div class="text-center mt-2" v-if="hasMore">
       <button @click="onMore" class="bg-teal-900 p-2 text-white">Load more...</button>
     </div>
 
@@ -82,7 +82,8 @@
         page: 0,
         articles: [],
         recent: {},
-        topPicks: []
+        topPicks: [],
+        hasMore: true
       }
     },
     created: function() {
@@ -99,7 +100,6 @@
         console.log('Enters onMore() > ' + this.page)
         this.page++;
         this.onData(this.page);
-        console.log(this.blogs.length)
       },
       onData: async function(page) {
         console.log('Enters onData()')
@@ -107,13 +107,15 @@
         const blogs = await this.$content('articles')
         .only(['title', 'description', 'thumbnail', 'slug', 'author'])
         .sortBy('createdAt', 'desc')
-        .limit(3)
+        .limit(6)
         .skip(skip)
         .fetch()
 
         for (let i in blogs) {
           this.articles.push(blogs[i])
         }
+
+        this.hasMore = (blogs.length > 0)
       },
       onRecent: async function() {
         const latest = await this.$content('articles')
