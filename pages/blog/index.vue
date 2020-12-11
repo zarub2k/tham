@@ -107,7 +107,10 @@
         const skip = page * perPage
         const blogs = await this.$content('articles')
         .only(['title', 'description', 'thumbnail', 'slug', 'author'])
-        .sortBy('createdAt', 'desc')
+        .where({
+          published: true
+        })
+        .sortBy('publishedOn', 'desc')
         .limit(perPage)
         .skip(skip)
         .fetch()
@@ -121,7 +124,7 @@
       onRecent: async function() {
         const latest = await this.$content('articles')
         .only(['title', 'description', 'thumbnail', 'slug', 'author'])
-        .sortBy('createdAt', 'desc')
+        .sortBy('publishedOn', 'desc')
         .limit(1)
         .fetch()
 
@@ -133,7 +136,7 @@
         .where({
           rated: true
         })
-        .sortBy('createdAt', 'desc')
+        .sortBy('publishedOn', 'desc')
         .limit(4)
         .fetch()
 
