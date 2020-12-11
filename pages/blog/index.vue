@@ -4,7 +4,7 @@
       <div class="col-span-2 shadow-md" v-if="recent.thumbnail">
         <figure class="">
           <img :src="require(`~/assets/images/${recent.thumbnail}`)"
-              alt="Elephant at sunset">
+              alt="Elephant at sunset" class="object-cover w-full">
           <figcaption class="p-2">
             <NuxtLink :to="{ name: 'blog-slug', params: { slug: recent.slug } }">
               <h1 class="text-2xl text-indigo-700">{{ recent.title }}</h1>
@@ -52,7 +52,7 @@
     </div>
 
     <div class="text-center mt-2" v-if="hasMore">
-      <button @click="onMore" class="bg-teal-900 p-2 text-white">Load more...</button>
+      <button @click="onMore" class="bg-teal-900 p-2 text-white">Show more</button>
     </div>
 
     <!-- <div class="grid grid grid-cols-3 gap-4 p-2">
@@ -79,7 +79,7 @@
     data () {
       return {
         email: '',
-        page: 0,
+        page: 1,
         articles: [],
         recent: {},
         topPicks: [],
@@ -103,11 +103,12 @@
       },
       onData: async function(page) {
         console.log('Enters onData()')
-        const skip = page * 1
+        const perPage = 6;
+        const skip = page * perPage
         const blogs = await this.$content('articles')
         .only(['title', 'description', 'thumbnail', 'slug', 'author'])
         .sortBy('createdAt', 'desc')
-        .limit(6)
+        .limit(perPage)
         .skip(skip)
         .fetch()
 
