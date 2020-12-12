@@ -1,5 +1,5 @@
 <template>
-  <section class="p-3 px-10">
+  <section>
     <div class="grid grid grid-cols-3 gap-4 p-2">
       <div class="col-span-2 shadow-md" v-if="recent.thumbnail">
         <figure class="">
