@@ -32,8 +32,16 @@
 </script>
 
 <style>
+  .nuxt-content h1 {
+    margin: 0px;
+    margin-bottom: 1px;
+  }
   .nuxt-content h2 {
     margin: 0px;
-    margin-bottom: 2px;
+    margin-bottom: 1px;
+  }
+  .nuxt-content h3 {
+    margin: 0px;
+    margin-bottom: 1px;
   }
 </style>
