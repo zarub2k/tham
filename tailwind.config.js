@@ -5,7 +5,7 @@ module.exports = {
         DEFAULT: {
           css: {
             color: theme('colors.gray.700'),
-            fontSize: '2.875rem',
+            fontSize: '2.0rem',
             h1: {
               // color: theme('colors.purple.500'),
               fontSize: '2.5rem',

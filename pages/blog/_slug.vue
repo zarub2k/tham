@@ -1,10 +1,10 @@
 <template>
   <section>
-    <p class="text-3xl text-indigo-700">
-      {{ article.title }}
-    </p>
     <div class="grid grid grid-cols-3 gap-4">
       <div class="col-span-2">
+        <p class="text-3xl text-indigo-700">
+          {{ article.title }}
+        </p>
         <article class="prose prose-sm sm:prose md:prose-md lg:prose-lg xl:prose-md">
           <nuxt-content :document="article" />
         </article>
