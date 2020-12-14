@@ -1,6 +1,12 @@
 {
   "socs": [
     {
+      "name": "Github",
+      "url": "https://github.com/zarub2k",
+      "image": "github.png",
+      "alt": "Github"
+    },
+    {
       "name": "Linkedin",
       "url": "https://www.linkedin.com/in/zarub2k/",
       "image": "linkedin.png",
