@@ -25,11 +25,7 @@ export default {
         .fetch()
 
       const socialMedias = values.socs
-
-        console.log("Here: " + socialMedias)
-
       for (let i in socialMedias) {
-        console.log("Value: " + JSON.stringify(socialMedias[i]))
         this.socials.push(socialMedias[i])
       }
     }
