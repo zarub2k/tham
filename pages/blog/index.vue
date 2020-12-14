@@ -79,6 +79,7 @@
     data () {
       return {
         email: '',
+        total: 0,
         page: 1,
         articles: [],
         recent: {},
@@ -87,9 +88,12 @@
       }
     },
     created: function() {
+      this.onTotal()
       this.onRecent()
       this.onTopRated()
       this.onData()
+
+      console.log('Total items: ' + this.total)
     },
     methods: {
       onSubscribe: function() {
@@ -99,7 +103,18 @@
       onMore: function() {
         console.log('Enters onMore() > ' + this.page)
         this.page++;
-        this.onData(this.page);
+        this.onData(this.page)
+      },
+      onTotal: async function() {
+        console.log('Enters onTotal()')
+        const value = (await this.$content('articles')
+        .only([])
+        .where({
+          published: true
+        })
+        .fetch()
+        ).length
+        this.total = value;
       },
       onData: async function(page) {
         console.log('Enters onData()')
