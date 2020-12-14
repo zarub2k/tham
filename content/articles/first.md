@@ -24,6 +24,9 @@ Learn how to fetch your content with `$content`: https://content.nuxtjs.org/fetc
 
 Learn how to display your Markdown content with the `<nuxt-content>` component directly in your template: https://content.nuxtjs.org/displaying.
 
+![image](thamizharasu.png)
+
+### sample
 ```
   module.exports = {
     theme: {

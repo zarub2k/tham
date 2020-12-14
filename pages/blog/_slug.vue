@@ -13,8 +13,13 @@
         <div class="border">
           <author :author="article.author" />
         </div>
-        <div class="border">
-          Social
+        <div class="border flex mt-2 justify-center">
+          <Social />
+          <Social />
+          <Social />
+        </div>
+        <div class="mt-2">
+          <Subscribe />
         </div>
       </div>
     </div>
@@ -34,14 +39,36 @@
 <style>
   .nuxt-content h1 {
     margin: 0px;
+    margin-top: 2px;
     margin-bottom: 1px;
+    font-size: 2.5rem;
+    font-weight: normal;
   }
   .nuxt-content h2 {
     margin: 0px;
+    margin-top: 2px;
     margin-bottom: 1px;
+    font-size: 2.0rem;
   }
   .nuxt-content h3 {
     margin: 0px;
+    margin-top: 2px;
     margin-bottom: 1px;
+    font-size: 1.5rem;
+  }
+  .nuxt-content h4 {
+    margin: 0px;
+    margin-bottom: 1px;
+    font-size: 1.0rem;
+  }
+  .nuxt-content p {
+    margin-top: 1px;
+  }
+  .nuxt-content img {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .nuxt-content-highlight {
+    @apply bg-teal-200;
   }
 </style>
