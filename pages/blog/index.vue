@@ -14,10 +14,10 @@
         </figure>
       </div>
       <div class="shadow-md border p-2">
-        <strong>Top Picks</strong>
+        <p class="text-gray-600 text-2xl">Top Picks</p>
         <div class="p-8 border mt-2" v-for="topPick of topPicks" :key="topPick.slug">
           <NuxtLink :to="{ name: 'blog-slug', params: { slug: topPick.slug } }">
-            <h1 class="text-xl text-indigo-500">{{ topPick.title }}</h1>
+            <h1 class="text-xl text-indigo-700">{{ topPick.title }}</h1>
           </NuxtLink>
         </div>
       </div>
