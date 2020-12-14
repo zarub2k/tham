@@ -13,11 +13,7 @@
         <div class="border">
           <author :author="article.author" />
         </div>
-        <div class="border flex mt-2 justify-center">
-          <Social />
-          <Social />
-          <Social />
-        </div>
+        <Social />
         <div class="mt-2">
           <Subscribe />
         </div>

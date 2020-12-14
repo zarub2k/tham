@@ -9,3 +9,18 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      email: ''
+    }
+  },
+  methods: {
+    onSubscribe: function() {
+      console.log('Email subscribed successfully!')
+      this.email = ''
+    },
+  }
+}
+</script>

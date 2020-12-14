@@ -90,10 +90,6 @@
       console.log('Total items: ' + this.total)
     },
     methods: {
-      onSubscribe: function() {
-        console.log('Email subscribed successfully!')
-        this.email = ''
-      },
       onMore: function() {
         console.log('Enters onMore() > ' + this.page)
         this.page++;
