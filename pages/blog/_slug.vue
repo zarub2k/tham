@@ -8,6 +8,9 @@
         <p class="mb-5 ml-1">
           <span>Published on:</span> <span class="text-gray-500">{{ article.publishedOn | normalize}}</span>
         </p>
+        <div class="pb-5">
+          <Share />
+        </div>
         <article class="prose prose-sm sm:prose md:prose-md lg:prose-lg xl:prose-md">
           <nuxt-content :document="article" />
         </article>
@@ -32,7 +35,6 @@
   export default {
     filters: {
       normalize: function(value) {
-        console.log("Date: " + value)
         return moment(value).format("YYYY-MMM-DD")
       }
     },
@@ -46,26 +48,26 @@
 <style>
   .nuxt-content h1 {
     margin: 0px;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 1px;
     font-size: 2.5rem;
     font-weight: normal;
   }
   .nuxt-content h2 {
     margin: 0px;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 2px;
     font-size: 2.0rem;
   }
   .nuxt-content h3 {
     margin: 0px;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 2px;
     font-size: 1.5rem;
   }
   .nuxt-content h4 {
     margin: 0px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-size: 1.0rem;
   }
   .nuxt-content p {

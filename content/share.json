@@ -1,0 +1,16 @@
+{
+  "socs": [
+    {
+      "name": "Linkedin",
+      "url": "https://www.linkedin.com/in/zarub2k/",
+      "image": "linkedin.png",
+      "alt": "Linked in"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/zarub2k",
+      "image": "twitter.png",
+      "alt": "Twitter"
+    }
+  ]
+}
