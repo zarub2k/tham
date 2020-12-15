@@ -10,6 +10,10 @@ author:
   bio: Speaker | Growth Coach | Learner
 ---
 
+<!-- <a href="https://twitter.com/intent/tweet?url=http://localhost:3000/tham/blog/first&text=Welcome%20post&via=zarub2k" target="_blank" rel="nofollow">Share on Twitter</a>
+
+<a href="https://www.linkedin.com/shareArticle?url=http://localhost:3000/tham/blog/first&title=Welcome%20post" target="_blank" rel="nofollow">Share on LinkedIn</a> -->
+
 Empower your NuxtJS application with `@nuxtjs/content` module: write in a `content/` directory and fetch your Markdown, JSON, YAML and CSV files through a MongoDB like API, acting as a **Git-based Headless CMS**.
 
 # Writing content

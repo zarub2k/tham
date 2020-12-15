@@ -46,7 +46,7 @@
 <style>
   .nuxt-content h1 {
     margin: 0px;
-    margin-top: 2px;
+    margin-top: 5px;
     margin-bottom: 1px;
     font-size: 2.5rem;
     font-weight: normal;
@@ -54,7 +54,7 @@
   .nuxt-content h2 {
     margin: 0px;
     margin-top: 5px;
-    margin-bottom: 1px;
+    margin-bottom: 2px;
     font-size: 2.0rem;
   }
   .nuxt-content h3 {
@@ -70,11 +70,14 @@
   }
   .nuxt-content p {
     margin-top: 1px;
-    margin-bottom: 2px;
+    margin-bottom: 5px;
   }
   .nuxt-content img {
     margin-top: 5px;
     margin-bottom: 5px;
+  }
+  .nuxt-content a {
+    text-decoration: underline;
   }
   .nuxt-content-highlight {
     @apply bg-teal-200;
