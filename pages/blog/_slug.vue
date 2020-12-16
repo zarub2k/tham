@@ -8,9 +8,9 @@
         <p class="mb-5 ml-1">
           <span>Published on:</span> <span class="text-gray-500">{{ article.publishedOn | normalize}}</span>
         </p>
-        <div class="pb-5">
+        <!-- <div class="pb-5">
           <Share />
-        </div>
+        </div> -->
         <article class="prose prose-sm sm:prose md:prose-md lg:prose-lg xl:prose-md">
           <nuxt-content :document="article" />
         </article>

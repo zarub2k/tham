@@ -49,6 +49,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    'vue-social-sharing/nuxt'
     // '@aceforth/nuxt-optimized-images',
   ],
 
