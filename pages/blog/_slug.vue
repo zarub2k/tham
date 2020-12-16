@@ -2,7 +2,7 @@
   <section>
     <div class="grid grid grid-cols-3 gap-4">
       <div class="col-span-2">
-        <p class="text-4xl text-indigo-500">
+        <p class="text-4xl text-gray-700">
           {{ article.title }}
         </p>
         <p class="mb-5 ml-1">
@@ -47,41 +47,24 @@
 
 <style>
   .nuxt-content h1 {
-    margin: 0px;
-    margin-top: 10px;
-    margin-bottom: 1px;
-    font-size: 2.5rem;
-    font-weight: normal;
+    @apply mt-5 mb-2 text-4xl text-gray-800;
   }
   .nuxt-content h2 {
-    margin: 0px;
-    margin-top: 10px;
-    margin-bottom: 2px;
-    font-size: 2.0rem;
+    @apply mt-5 mb-2 text-3xl text-gray-800;
   }
   .nuxt-content h3 {
-    margin: 0px;
-    margin-top: 10px;
-    margin-bottom: 2px;
-    font-size: 1.5rem;
+    @apply mt-5 mb-2 text-2xl text-gray-800;
   }
   .nuxt-content h4 {
-    margin: 0px;
-    margin-bottom: 10px;
-    font-size: 1.0rem;
+    @apply mt-5 mb-2 text-xl text-gray-800;
   }
   .nuxt-content p {
-    margin-top: 1px;
-    margin-bottom: 5px;
+    @apply my-2
   }
   .nuxt-content img {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    @apply my-5
   }
   .nuxt-content a {
-    text-decoration: underline;
-  }
-  .nuxt-content-highlight {
-    @apply bg-teal-200;
+    @apply underline text-blue-700
   }
 </style>

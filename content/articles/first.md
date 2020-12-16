@@ -34,7 +34,7 @@ Learn how to display your Markdown content with the `<nuxt-content>` component d
 
 ### My video
 
-<iframe class="w-full" height="375px" src="https://www.youtube.com/embed/JB5h_vD6SCk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- <iframe class="w-full" height="375px" src="https://www.youtube.com/embed/JB5h_vD6SCk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
 <button class="bg-red-400 p-2 px-5">Hello</button>
 
