@@ -21,6 +21,9 @@ You might be curious to know that, what is AARRR framework or this model is all 
 Acquisition is all about attracting new users through various channels.
 
 Never target everyone as your customer. Define your target customers and focus to work with them to attract. You need to trial and error with various acquisition channels to reach your target users.
+| H1 | H2 |
+| :--- | :--- |
+| T1 | T2 |
 
 ### Activation
 > 
