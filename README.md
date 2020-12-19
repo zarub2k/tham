@@ -1,3 +1,12 @@
+# Required for a blog
+- [ ] Loads list of blogs
+- [ ] Details of a blog
+- [ ] Pagination for blogs
+- [ ] Next / Previous blog
+- [ ] RSS / Atom feed 
+
+# Required for website
+
 # tham
 
 ## Build Setup
