@@ -32,6 +32,8 @@ Learn how to display your Markdown content with the `<nuxt-content>` component d
 
 ![image](thamizharasu.png)
 
+https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2FshareArticle%3Furl%3Dhttps%253A%252F%252Fnblog.tham.fyi%252Fthe-ultimate-guide-to-double-your-business-growth
+
 ### My video
 
 <!-- <iframe class="w-full" height="375px" src="https://www.youtube.com/embed/JB5h_vD6SCk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
