@@ -1,11 +1,17 @@
 # Required for a blog
 - [x] Loads list of blogs
-- [ ] Details of a blog
-- [ ] Pagination for blogs
+- [x] Details of a blog
+- [x] Pagination for blogs
 - [ ] Next / Previous blog
 - [ ] RSS / Atom feed 
+- [ ] Subscribe to newsletter
+- [x] Author information
+- [ ] Search articles by keyword
+- [ ] Articles by category
+- [ ] Related articles
 
 # Required for website
+- [ ] Home page design
 
 # tham
 

@@ -2,7 +2,7 @@
   <div class="grid grid-cols-4 gap-4 p-3 border">
     <div>
       <NuxtLink to="/" class="font-sans text-2xl antialiased text-indigo-700">
-        tham.dev
+        Tham
       </NuxtLink>
     </div>
     <div class="col-span-2 mt-1">
