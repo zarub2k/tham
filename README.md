@@ -12,7 +12,7 @@
 
 # Required for website
 - [ ] Home page design
-
+- [ ] Contact me integration with Firebase / Airtable
 # tham
 
 ## Build Setup
