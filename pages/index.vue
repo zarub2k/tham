@@ -1,5 +1,19 @@
 <template>
-  <div class="container">
+  <section class="h-full bg-gray-100">
+    <div class="flex items-center">
+      <div class="flex-1">
+        <p class="cover-title text-6xl text-center font-bold leading-none">
+          Become the hero of your own story
+        </p>
+        <div>
+        </div>
+      </div>
+      <div class="flex-1">
+        <img src="~/assets/images/cover.png" alt="Cover" class="">
+      </div>
+    </div>
+  </section>
+  <!-- <div class="container">
     <div>
       <Logo />
       <h1 class="title">
@@ -26,20 +40,24 @@
         <NuxtLink to="/contact">Contact me</NuxtLink>
       </div>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <script>
-export default {}
+export default {
+}
 </script>
 
 <style>
+.cover-title {
+  color: #35495e;
+}
 /* Sample `apply` at-rules with Tailwind CSS
 .container {
 @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
-.container {
+/* .container {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
@@ -76,5 +94,5 @@ export default {}
 
 .links {
   padding-top: 15px;
-}
+} */
 </style>
