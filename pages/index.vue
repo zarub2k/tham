@@ -1,6 +1,6 @@
 <template>
-  <section class="h-full bg-gray-100">
-    <div class="flex items-center">
+  <section class="h-full">
+    <div class="flex items-center bg-gray-100 px-10">
       <div class="flex-1">
         <p class="cover-title text-6xl text-center font-bold leading-none">
           Become the hero of your own story
@@ -12,6 +12,8 @@
         <img src="~/assets/images/cover.png" alt="Cover" class="">
       </div>
     </div>
+
+    <Services />
   </section>
   <!-- <div class="container">
     <div>
