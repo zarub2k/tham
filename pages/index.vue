@@ -14,6 +14,9 @@
     </div>
 
     <Services />
+    <div class="px-10">
+      <ContactForm />
+    </div>
   </section>
   <!-- <div class="container">
     <div>

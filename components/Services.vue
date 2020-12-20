@@ -1,5 +1,5 @@
 <template>
-  <div class="px-10 py-5 border">
+  <div class="px-10 py-5">
     <p class="text-3xl text-center mb-3">
       Services
     </p>
