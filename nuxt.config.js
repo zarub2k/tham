@@ -1,4 +1,10 @@
 export default {
+  publicRuntimeConfig: {
+    baseURL: ''
+  },
+  privateRuntimeConfig: {
+    airtableKey: process.env.AIRTABLE_KEY
+  },
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
 
@@ -39,7 +45,7 @@ export default {
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss',
+    '@nuxtjs/tailwindcss'
     // '@aceforth/nuxt-optimized-images',
   ],
   // optimizedImages: {

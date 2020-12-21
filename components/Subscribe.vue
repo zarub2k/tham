@@ -7,9 +7,12 @@
         <button @click="onSubscribe" class="bg-teal-900 p-2 text-white">Subscribe</button>
       </p>
     </div>
+    Config {{ this.$config }}
   </div>
 </template>
 <script>
+import moment from 'moment'
+
 export default {
   data() {
     return {
@@ -18,7 +21,14 @@ export default {
   },
   methods: {
     onSubscribe: function() {
-      console.log('Email subscribed successfully!')
+      console.log('Enters onSubscribe()')
+
+      const date = moment().format('YYYY-MM-DD')
+      const subscribe = {
+        date: date,
+        email: this.email
+      }
+
       this.email = ''
     },
   }
