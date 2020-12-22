@@ -22,6 +22,7 @@ export default {
   methods: {
     onSubscribe: function() {
       console.log('Enters onSubscribe()')
+      console.log('Private key: ' + this.$config.airtableKey)
 
       const date = moment().format('YYYY-MM-DD')
       const subscribe = {
