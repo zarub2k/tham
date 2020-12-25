@@ -20,9 +20,8 @@ export default {
     }
   },
   methods: {
-    onSubscribe: function() {
+    onSubscribe: async function() {
       console.log('Enters onSubscribe()')
-      console.log('Private key: ' + this.$config.airtableKey)
 
       const date = moment().format('YYYY-MM-DD')
       const subscribe = {
@@ -30,8 +29,27 @@ export default {
         email: this.email
       }
 
+      const subscribeUrl = this.$config.subscribeUrl
+      // const subscribeUrl = '/api/subscribe'
+      const options = {
+        method: 'POST',
+        mode: 'no-cors',
+        referrerPolicy: 'no-referrer',
+        body: JSON.stringify(subscribe),
+        headers: {
+          'Content-Type': 'application/json;charset=UTF-8'
+        }
+      }
+
+      fetch(subscribeUrl, options)
+        .then(response => response.json())
+        .then(json => console.log(JSON.stringify(json)))
+        .catch(err => console.log('Error: ' + err))
+      // const response = await this.$http.post(subscribeUrl, subscribe)
+      // console.log('Subscribe completed with : ' + response.status)
+
       this.email = ''
-    },
+    }
   }
 }
 </script>

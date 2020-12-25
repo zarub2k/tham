@@ -1,9 +1,8 @@
 export default {
   publicRuntimeConfig: {
-    baseURL: ''
+    subscribeUrl: process.env.ZAPIER_HOOK_SUBSCRIBE
   },
   privateRuntimeConfig: {
-    airtableKey: process.env.AIRTABLE_KEY
   },
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
@@ -56,9 +55,17 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    // '@nuxt/http',
     'vue-social-sharing/nuxt'
     // '@aceforth/nuxt-optimized-images',
   ],
+
+  // http: {
+  //   proxy: true
+  // },
+  // proxy: {
+  //   '/api/subscribe': 'https://hooks.zapier.com/hooks/catch/3810528/oca4bq4'
+  // },
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {
