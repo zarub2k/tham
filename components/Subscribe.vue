@@ -34,21 +34,28 @@ export default {
       const options = {
         method: 'POST',
         mode: 'no-cors',
+        // credentials: 'same-origin',
         referrerPolicy: 'no-referrer',
         body: JSON.stringify(subscribe),
         headers: {
-          'Content-Type': 'application/json;charset=UTF-8'
+          'Content-Type': 'application/json;charset=UTF-8',
+          'Access-Control-Allow-Origin': '*'
         }
       }
 
-      fetch(subscribeUrl, options)
-        .then(response => response.json())
-        .then(json => console.log(JSON.stringify(json)))
-        .catch(err => console.log('Error: ' + err))
+      // await fetch(subscribeUrl, options)
+      //   .then(data => data.json())
+      //   .then(json => console.log(json))
+      //   .catch(err => console.log('Error: ' + err))
       // const response = await this.$http.post(subscribeUrl, subscribe)
       // console.log('Subscribe completed with : ' + response.status)
 
+      this.callApi(subscribeUrl, options)
       this.email = ''
+    },
+    callApi: async function(url, options) {
+      await fetch(url, options)
+      // await fetch(url, options).then(data => { return data.status })
     }
   }
 }
