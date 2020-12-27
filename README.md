@@ -4,15 +4,15 @@
 - [x] Pagination for blogs
 - [ ] Next / Previous blog
 - [ ] RSS / Atom feed 
-- [ ] Subscribe to newsletter
+- [x] Subscribe to newsletter
 - [x] Author information
 - [ ] Search articles by keyword
 - [ ] Articles by category
 - [ ] Related articles
 
 # Required for website
-- [ ] Home page design
-- [ ] Contact me integration with Firebase / Airtable
+- [x] Home page design
+- [x] Contact me integration with Airtable
 # tham
 
 ## Build Setup
