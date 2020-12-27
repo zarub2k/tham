@@ -1,1 +1,0 @@
-window.__NUXT__={staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1609083818",layout:"default",error:null,serverRendered:true,routePath:"\u002Fservice",config:{subscribeUrl:"https:\u002F\u002Fhooks.zapier.com\u002Fhooks\u002Fcatch\u002F3810528\u002Foca4bq4",inquiryUrl:"https:\u002F\u002Fhooks.zapier.com\u002Fhooks\u002Fcatch\u002F3810528\u002Focaci57",content:{dbHash:"a6bb8158"}}};
