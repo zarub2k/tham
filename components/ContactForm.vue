@@ -18,6 +18,8 @@
 
 <script>
 import moment from 'moment'
+import Toastify from 'toastify-js'
+import 'toastify-js/src/toastify.css'
 
 export default {
   data() {
@@ -50,11 +52,21 @@ export default {
 
       await fetch(inquiryUrl, options)
       this.onInit()
+      this.showToast()
     },
     onInit: function() {
       this.inquiry = {
         status: 'open'
       }
+    },
+    showToast: function() {
+      Toastify({
+        text: "Thanks for your interest. You will be communicated shortly!",
+        backgroundColor: "linear-gradient(to right, from-teal-600, to-blue-500)",
+        className: "success",
+        gravity: "bottom",
+        position: "center"
+      }).showToast();
     }
   }
 }

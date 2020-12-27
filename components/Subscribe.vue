@@ -7,11 +7,12 @@
         <button @click="onSubscribe" class="bg-teal-900 p-2 text-white">Subscribe</button>
       </p>
     </div>
-    Config {{ this.$config }}
   </div>
 </template>
 <script>
 import moment from 'moment'
+import Toastify from 'toastify-js'
+import 'toastify-js/src/toastify.css'
 
 export default {
   data() {
@@ -52,10 +53,20 @@ export default {
 
       this.callApi(subscribeUrl, options)
       this.email = ''
+      this.showToast()
     },
     callApi: async function(url, options) {
       await fetch(url, options)
       // await fetch(url, options).then(data => { return data.status })
+    },
+    showToast: function() {
+      Toastify({
+        text: "You have been subscribed successfully!",
+        backgroundColor: "linear-gradient(to right, from-teal-600, to-blue-500)",
+        className: "success",
+        gravity: "bottom",
+        position: "center"
+      }).showToast();
     }
   }
 }

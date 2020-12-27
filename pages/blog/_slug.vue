@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="grid grid grid-cols-3 gap-4">
+    <div class="grid grid grid-cols-3 gap-4 px-10">
       <div class="col-span-2">
         <p class="text-4xl text-gray-700">
           {{ article.title }}

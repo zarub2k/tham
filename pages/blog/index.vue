@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="grid grid grid-cols-3 gap-4 p-2">
+    <div class="grid grid grid-cols-3 gap-4 px-10">
       <div class="col-span-2 shadow-md" v-if="recent.thumbnail">
         <figure class="">
           <img :src="require(`~/assets/images/${recent.thumbnail}`)"
@@ -23,14 +23,14 @@
       </div>
     </div>
 
-    <div class="p-2 mt-2">
+    <div class="px-10 my-5">
       <Subscribe />
     </div>
 
-    <p class="p-2 text-indigo-500 text-2xl">
+    <p class="px-10 my-2 text-indigo-500 text-2xl">
       Recently published
     </p>
-    <div class="grid grid grid-cols-3 gap-4 p-2" v-if="articles.length > 0">
+    <div class="grid grid grid-cols-3 gap-4 px-10 my-2" v-if="articles.length > 0">
       <div class="border shadow-md" v-for="article of articles" :key="article.slug">
         <figure class="">
           <img :src="require(`~/assets/images/${article.thumbnail}`)"
