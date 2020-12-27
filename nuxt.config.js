@@ -1,6 +1,7 @@
 export default {
   publicRuntimeConfig: {
-    subscribeUrl: process.env.ZAPIER_HOOK_SUBSCRIBE
+    subscribeUrl: process.env.ZAPIER_HOOK_SUBSCRIBE,
+    inquiryUrl: process.env.ZAPIER_HOOK_INQUIRY
   },
   privateRuntimeConfig: {
   },
