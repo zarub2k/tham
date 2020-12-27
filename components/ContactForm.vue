@@ -11,7 +11,7 @@
         <option value="consulting">Consulting</option>
         <option value="speaking">Speaking</option>
       </select>
-      <button  class="w-1/3 m-2 p-2 bg-teal-900 text-white" @click="onInquire">Subscribe</button>
+      <button  class="w-1/3 m-2 p-2 bg-teal-900 text-white" @click="onInquire">Book now</button>
     </div>
   </div>
 </template>
