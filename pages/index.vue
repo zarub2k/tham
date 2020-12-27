@@ -5,6 +5,9 @@
         <p class="cover-title text-6xl text-center font-bold leading-none">
           Become the hero of your own story
         </p>
+        <p class="cover-title text-xl text-center leading-none mt-8">
+          Coaching you to build a thriving business
+        </p>
         <div>
         </div>
       </div>
