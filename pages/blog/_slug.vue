@@ -14,6 +14,7 @@
         <article class="prose prose-sm sm:prose md:prose-md lg:prose-lg xl:prose-md">
           <nuxt-content :document="article" />
         </article>
+        <PrevNext :prev="prev" :next="next" />
       </div>
       <div>
         <div class="border">
@@ -40,7 +41,21 @@
     },
     async asyncData({ $content, params }) {
       const article = await $content('articles', params.slug).fetch()
-      return { article }
+
+      const [prev, next] = await $content('articles')
+        .only(['title', 'slug'])
+        .where({
+          published: true
+        })
+        .sortBy('publishedOn', 'desc')
+        .surround(params.slug)
+        .fetch()
+
+      return {
+        article,
+        prev,
+        next
+      }
     }
   }
 </script>
