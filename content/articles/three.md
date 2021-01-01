@@ -7,7 +7,7 @@ published: true
 publishedOn: 2020-10-02
 author:
   name: Tham
-  bio: Speaker | Growth Coach | Learner
+  bio: Speaker | Growth Coach
 ---
 
 # All about new blog

@@ -7,7 +7,7 @@ published: true
 publishedOn: 2020-12-19
 author:
   name: Tham
-  bio: Growth Coach
+  bio: Author | Growth Coach
 ---
 
 Big brands allocates heavy budget on marketing and achieve their 2x growth. As a small business owners or an Indie makers, have you ever felt little on, not able to spend money on marketing for achieving your business growth? If you feel YES, you can read further to understand the strategy to achieve your 2x growth without spending too much money. I am going to demystify the process through AARRR framework to make that possible.

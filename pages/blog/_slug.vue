@@ -15,6 +15,7 @@
           <nuxt-content :document="article" />
         </article>
         <PrevNext :prev="prev" :next="next" />
+        <Related :slug="pageSlug" />
       </div>
       <div>
         <div class="border">
@@ -22,7 +23,7 @@
         </div>
         <Social />
         <div class="mt-2">
-          <Subscribe />
+          <Subscribe/>
         </div>
       </div>
     </div>
@@ -40,6 +41,7 @@
       }
     },
     async asyncData({ $content, params }) {
+      const pageSlug = params.slug
       const article = await $content('articles', params.slug).fetch()
 
       const [prev, next] = await $content('articles')
@@ -54,7 +56,8 @@
       return {
         article,
         prev,
-        next
+        next,
+        pageSlug
       }
     }
   }

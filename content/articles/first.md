@@ -7,7 +7,7 @@ published: true
 publishedOn: 2020-12-01
 author:
   name: Tham
-  bio: Speaker | Growth Coach | Learner
+  bio: Speaker | Growth Coach
 ---
 
 <!-- <a href="https://twitter.com/intent/tweet?url=http://localhost:3000/tham/blog/first&text=Welcome%20post&via=zarub2k" target="_blank" rel="nofollow">Share on Twitter</a>
