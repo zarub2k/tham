@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="text-indigo-500 text-2xl py-2">
+    <p class="text-indigo-500 text-2xl pt-2">
       Related Articles
     </p>
     <div class="grid grid grid-cols-3 gap-4 my-2" v-if="related.length > 0">
@@ -12,7 +12,7 @@
             <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
               <h1 class="text-xl text-indigo-700">{{ article.title }}</h1>
             </NuxtLink>
-            <div class="text-gray-600 leading-relaxed">{{ article.description }} </div>
+            <!-- <div class="text-gray-600 leading-relaxed">{{ article.description }} </div> -->
           </figcaption>
         </figure>
       </div>
@@ -38,7 +38,7 @@ export default {
       console.log('Enters Related.onData()')
 
       const relatedrelated = await this.$content('articles')
-      .only(['title', 'description', 'thumbnail', 'slug'])
+      .only(['title', 'thumbnail', 'slug'])
       .where({
         category: this.category
       })
