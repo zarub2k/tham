@@ -26,7 +26,7 @@ export default {
     ],
     script: [
       {
-        src: 'https://platform-api.sharethis.com/js/sharethis.js#property=5fd9f9692d39bc00140f8972&product=sop'
+        // src: 'https://platform-api.sharethis.com/js/sharethis.js#property=5fd9f9692d39bc00140f8972&product=sop'
       }
     ]
   },

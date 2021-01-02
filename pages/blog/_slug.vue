@@ -8,12 +8,13 @@
         <p class="mb-5 ml-1">
           <span>Published on:</span> <span class="text-gray-500">{{ article.publishedOn | normalize}}</span>
         </p>
-        <!-- <div class="pb-5">
-          <Share />
-        </div> -->
+        <div class="pb-5">
+          <Share :title="article.title" :slug="slug" />
+        </div>
         <article class="prose prose-sm sm:prose md:prose-md lg:prose-lg xl:prose-md">
           <nuxt-content :document="article" />
         </article>
+        {{ article }}
         <PrevNext :prev="prev" :next="next" />
         <Related :category="category" :slug="slug"/>
       </div>

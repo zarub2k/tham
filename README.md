@@ -9,6 +9,7 @@
 - [ ] Search articles by keyword
 - [ ] Articles by category
 - [x] Related articles
+- [ ] Social share icon for article
 
 # Required for website
 - [x] Home page design
