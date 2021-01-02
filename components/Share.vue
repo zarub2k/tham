@@ -47,6 +47,12 @@ export default {
       return "https://twitter.com/intent/tweet?url=" 
         + this.encodedUrl
         + "&text=Welcome%20post&via=zarub2k" 
+    },
+    facebookShare: function() {
+      return ''
+    },
+    linkedinShare: function() {
+      return ''
     }
   },
   // link: [
