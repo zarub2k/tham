@@ -2,13 +2,13 @@
 - [x] Loads list of blogs
 - [x] Details of a blog
 - [x] Pagination for blogs
-- [ ] Next / Previous blog
+- [x] Next / Previous blog
 - [ ] RSS / Atom feed 
 - [x] Subscribe to newsletter
 - [x] Author information
 - [ ] Search articles by keyword
 - [ ] Articles by category
-- [ ] Related articles
+- [x] Related articles
 
 # Required for website
 - [x] Home page design
