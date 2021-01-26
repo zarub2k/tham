@@ -10,6 +10,7 @@
 - [ ] Articles by category
 - [x] Related articles
 - [ ] Social share icon for article
+- [ ] General alignment clean-up
 
 # Required for website
 - [x] Home page design
